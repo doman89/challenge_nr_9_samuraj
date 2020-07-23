@@ -1,0 +1,160 @@
+.swiper-container {
+	margin-bottom: 100px;
+}
+
+.swiper-container-first {
+	max-width: 1366px;
+}
+
+.swiper-container-first .swiper-slide {
+	height: auto;
+	max-height: 600px;
+}
+
+@media (orientation: portrait) and (max-width: 1024px) {
+	.swiper-container-first .swiper-slide {
+		height: 100vh;
+		max-width: unset;
+	}
+}
+
+.swiper-container-first img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.swiper-button {
+	display: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, .3);
+	transform: translateY(-50%);
+	transition: 0.3s;
+	color: #000;
+}
+
+@media (min-width: 1025px) {
+	.swiper-button {
+		display: flex;
+	}
+}
+
+.swiper-button:hover {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.swiper-button::after {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.swiper-button-disabled {
+	display: none;
+}
+
+.swiper-container-first .swiper-scrollbar {
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.swiper-container-first .swiper-scrollbar-drag {
+	background-color: #fff;
+}
+
+.swiper-container-second {
+	width: 500px;
+	height: 500px;
+	margin-bottom: 300px;
+}
+
+.swiper-container-second img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.swiper-container-third .parallax-bg {
+	background-image: url('https://cdn-cms.f-static.net/ready_uploads/media/22858/2000_5cdc225e1f203.jpg');
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 150%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.swiper-container-third .swiper-wrapper {
+	height: 800px;
+}
+
+.swiper-container-third .swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-container-third .course {
+	display: flex;
+	width: 75%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.swiper-container-third .course-author {
+	flex-basis: 25%;
+	display: flex;
+}
+
+.swiper-container-third img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.swiper-container-third .course-info {
+	font-family: Arial, Helvetica, sans-serif;
+	flex-basis: 75%;
+	padding: 20px;
+	color: #fff;
+}
+
+.swiper-container-third .course-content {
+	font-size: 20px;
+}
+
+.swiper-container-fourth {
+	width: 100%;
+	padding: 50px 0;
+}
+
+.swiper-container-fourth .swiper-slide {
+	width: 500px;
+	height: 500px;
+}
+
+.swiper-container-fourth .course {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background-color: #999;
+}
+
+.swiper-container-fourth .course-author {
+	display: flex;
+	flex-basis: 50%;
+	max-height: 50%;
+}
+
+.swiper-container-fourth img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.swiper-container-fourth .course-info {
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	flex-basis: 50%;
+	flex-shrink: 1;
+}
